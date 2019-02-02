@@ -4,6 +4,10 @@ function searchRepositories() {
   $get(url, data => displaySearchResults(data)).fail(error => displayError());
 }
 
+function displaySearchResults() {
+  
+}
+
 
 $(document).ready(function (){
 });
