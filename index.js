@@ -22,8 +22,9 @@ function displayError() {
 }
 
 function showCommits(el) {
-  const commits = JSON.parse(this.responseText);
-  const commitsList = `<ul>${commits
+  const owner= 
+  const repo =
+  const url = "https://api.github.com//search/repositories/commits"
   
 }
 
