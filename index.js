@@ -32,7 +32,7 @@ function showCommits(el) {
   const owner= el.dataset.owner;
   const repo = el.dataset.repository;
   const url = `${base}/repos/${owner}/${repo}/commits`;
-  $.get(url, data => showCommits(data)).fail(error => displayError());
+  $.get(url, data => displayCommits(data)).fail(error => displayError());
 }
 
 function displayCommits(data) {
