@@ -17,6 +17,10 @@ function displaySearchResults() {
    $("#results").html(resultString);
 }
 
+function displayError() {
+  
+}
+
 
 $(document).ready(function (){
 });
