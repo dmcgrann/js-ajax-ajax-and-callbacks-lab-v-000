@@ -28,5 +28,11 @@ function showCommits(el) {
   $get(commitUrl, data => showCommits(data)).fail(error => displayError());
 }
 
+function displayCommits(data) {
+  const commits = data.map(commit => `<li><h3>${commit.sha}</h3><p>${commit.commit.message}</p></li>`).join("");
+  const commitsString = `<ul>${commits}</ul>`
+  $("#details").html(commitsString);
+}
+
 $(document).ready(function (){
 });
