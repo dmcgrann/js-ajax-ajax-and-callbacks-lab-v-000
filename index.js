@@ -27,7 +27,7 @@ function showCommits(el) {
   const owner= el.dataset.owner;
   const repo = el.dataset.repo;
   const url = "https://api.github.com//search/repositories/commits"
-  $get(url, data => showCommits(data)).fail(error => displayError());
+  $.get(url, data => showCommits(data)).fail(error => displayError());
 }
 
 function displayCommits(data) {
