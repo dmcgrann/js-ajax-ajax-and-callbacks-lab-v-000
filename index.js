@@ -26,7 +26,7 @@ function displaySearchResults() {
 function showCommits(el) {
   const owner= el.dataset.owner;
   const repo = el.dataset.repo;
-  const url = "`${base}/repos/${owner}/${repo}/commits`"
+  const url = `${base}/repos/${owner}/${repo}/commits`
   $.get(url, data => showCommits(data)).fail(error => displayError());
 }
 
