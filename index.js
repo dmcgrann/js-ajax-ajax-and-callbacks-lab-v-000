@@ -1,7 +1,7 @@
 const base = 'https://api.github.com'
 
-function searchRepositories(data) {
-  con
+function searchRepositories() {
+  const searchTerms = ${searchTerms};
 }
 
 
