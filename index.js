@@ -11,7 +11,7 @@ function searchRepositories() {
 }
 
 function displaySearchResults() {
-  cconst resultString = results.items.map(result => {
+  const resultString = results.items.map(result => {
     return `
       <div>
         <h2><a href="${result.html_url}">${result.name}</a></h2>
