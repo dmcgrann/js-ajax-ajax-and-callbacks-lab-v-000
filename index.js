@@ -1,7 +1,7 @@
 const base = "https://api.github.com"
 
 function displayError() {
-  $("errors").html("I'm sorry, there's been an error. Please try again.");
+  $("#errors").html("I'm sorry, there's been an error. Please try again.");
 }
 
 function searchRepositories() {
