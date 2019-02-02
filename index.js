@@ -22,13 +22,16 @@ function displayError() {
 }
 
 function showCommits() {
-  const detailString = details.map(detail => {
-    return 
-    <ul>
-    
-    </ul>
-  }
+  `<ul>${commits
+    .map(
+      commit =>
+        '<li><strong>' +
+        commit.author.login +
+        '</strong> - ' +
+        commit.commit.message +
+        '</li>'
     )
+    .join('')}</ul>`;
 }
 
 
