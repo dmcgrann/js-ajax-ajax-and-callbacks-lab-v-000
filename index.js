@@ -36,5 +36,4 @@ function displayCommits(data) {
   $("#details").html(commitsString);
 }
 
-$(document).ready(function (){
-});
+
