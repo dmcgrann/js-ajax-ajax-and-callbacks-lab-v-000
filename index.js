@@ -22,7 +22,8 @@ function displayError() {
 }
 
 function showCommits() {
-  `<ul>${commits
+  const commits = JSON.parse(this.responseText);
+  const commitsList = `<ul>${commits
     .map(
       commit =>
         '<li><strong>' +
@@ -32,6 +33,7 @@ function showCommits() {
         '</li>'
     )
     .join('')}</ul>`;
+  document.getElementById('details').innerHTML = commitsList;
 }
 
 
