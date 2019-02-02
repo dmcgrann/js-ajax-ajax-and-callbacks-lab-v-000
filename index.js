@@ -18,7 +18,7 @@ function displaySearchResults() {
 }
 
 function displayError() {
-  
+  ${"errors"}.html()
 }
 
 
