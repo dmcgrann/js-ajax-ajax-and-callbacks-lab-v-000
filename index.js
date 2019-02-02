@@ -22,8 +22,8 @@ function displayError() {
 }
 
 function showCommits(el) {
-  const owner= 
-  const repo =
+  const owner= el.dataset.owner;
+  const repo = el.dataset.repo;
   const url = "https://api.github.com//search/repositories/commits"
   
 }
