@@ -6,8 +6,8 @@ function displayError() {
 
 function searchRepositories() {
   const searchTerms = $("#searchTerms").val();
-  const searschUrl = `${base}/search/repositories?q=${searchTerms}`;
-  $get(url, data => displaySearchResults(data)).fail(error => displayError());
+  const searchUrl = `${base}/search/repositories?q=${searchTerms}`;
+  $get(searchUrl, data => displaySearchResults(data)).fail(error => displayError());
 }
 
 function displaySearchResults() {
