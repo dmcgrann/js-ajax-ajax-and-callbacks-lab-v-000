@@ -24,10 +24,9 @@ function displayError() {
 function showCommits(el) {
   const owner= el.dataset.owner;
   const repo = el.dataset.repo;
-  const url = "https://api.github.com//search/repositories/commits"
-  
+  const commitUrl = "https://api.github.com//search/repositories/commits"
+  $get(commitUrl, data => showCommits(data)).fail(error => displayError());
 }
-
 
 $(document).ready(function (){
 });
