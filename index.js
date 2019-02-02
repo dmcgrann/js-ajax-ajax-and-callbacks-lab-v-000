@@ -10,7 +10,7 @@ function searchRepositories() {
   $.get(searchUrl, data => displaySearchResults(data)).fail(error => displayError());
 }
 
-function displaySearchResults() {
+function displaySearchResults(results) {
   const resultString = results.items.map(result => {
     return `
       <div>
@@ -21,8 +21,12 @@ function displaySearchResults() {
       <hr>
       `
   });
+
+   console.log(resultString);
+
    $("#results").html(resultString);
 }
+
 
 function showCommits(el) {
   const owner= el.dataset.owner;
