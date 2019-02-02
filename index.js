@@ -18,6 +18,7 @@ function displaySearchResults() {
         <p><a href="#" data-repository="${result.name}" data-owner="${result.owner.login}" onclick="showCommits(this)">Show Commits</a></p>
         <p>${result.description}</p>
       </div>
+      <hr>
       `
   });
    $("#results").html(resultString);
