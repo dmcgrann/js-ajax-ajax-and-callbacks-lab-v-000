@@ -1,6 +1,6 @@
 function searchRepositories() {
   const searchTerms = ${"#searchTerms"}.val();
-  const url = 
+  const url = "https://api.github.com/"
 }
 
 
